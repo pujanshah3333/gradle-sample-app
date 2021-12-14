@@ -23,7 +23,7 @@ jobs:
         run: npx -y renovate
         env:
           RENOVATE_CONFIG_FILE: renovate/config.js
-          RENOVATE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RENOVATE_TOKEN: ${{ secrets.MY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
           RENOVATE_REPOSITORIES: pujanshah3333/gradle-sample-app
           LOG_LEVEL: 'debug'
