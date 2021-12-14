@@ -3,7 +3,7 @@ COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon 
 
-FROM openjdk:8-jre-slim
+FROM openjdk:8-jre-slim@sha256:43215739395627f798132b2626a315956d28985bd66f73048aa58736374e35c5
 
 EXPOSE 8080
 
