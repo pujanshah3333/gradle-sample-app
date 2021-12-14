@@ -1,4 +1,4 @@
-FROM gradle:4.7.0-jdk8-alpine@sha256:588dcfb0c01babf0ed3989462f13600567e8c5325ea746122dea10717d0a7676 AS build
+FROM gradle:5.4.1-jdk8-alpine@sha256:1cb081cfa6d25d718f6276c3df6474b332c06278d8bb64bcb0fc1243b1e4491e AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon 
