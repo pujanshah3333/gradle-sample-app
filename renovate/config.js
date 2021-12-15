@@ -37,12 +37,6 @@ module.exports = {
       token: process.env.GITHUB_TOKEN,
     },
   ],
-  lockFileMaintenance: {
-    automerge: true,
-    enabled: true,
-    labels: ['automerge'],
-    schedule: null,
-  },
   packageRules: [
     {
       matchUpdateTypes: ['major'],
